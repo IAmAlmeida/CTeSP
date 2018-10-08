@@ -12,7 +12,7 @@
 		
 	EXE 2:
 		
-		Para a determinação de um numero impar não é necessario uma estrutura de repetição.
+		Para a determinação de um numero impar não é necessario uma estrutura de repetição mas uma de seleção.
 		
 		Embora não seja necessario uma estrutura de  repetição para imprimir os números no intrevalo de 1 a 100,
 		torna-se mais conveniente o uso de tal.
@@ -51,7 +51,7 @@
 		Variáveis de entrada: seg_Totais: número inteiro
 		Variáveis internas: horas, minutos, segundos, seg_Restantes: número inteiro
 		INICIO
-			SE (seg_Totais <= 0 OU seg_totais >= 10000) ENTAO
+			SE (seg_Totais <= 0 OU seg_totais >= 100000) ENTAO
 				ESCREVER ("Introduza um numero menor que 10000 ou maior que 0")
 			SENAO
 				horas= seg_Totais / 3600
@@ -85,16 +85,18 @@
 	EXE 6: 
 		
 		1:
-			Nome: parouimpar{v1}
+			Nome: parouimpar{v1,R}
 			Variáveis de entrada: v1 : número inteiro
+			Variáveis de saida : R : número inteiro
 			INICIO
 				ESCREVER("Introduza um número")
 				LER(v1)
 				SE(RESTO(v1/2)=0) ENTAO
-					ESCREVER("1")
+					R=1
 				SENAO
-					ESCREVER("0");
+					R=0;
 				FIMSE
+				RETORNa R
 			FIM
 		
 		2:	
@@ -109,6 +111,7 @@
 				SENAO
 					ESCREVER v1
 				FIMSE
+				RETORNA R 
 			FIM
 			
 		3:
@@ -120,11 +123,9 @@
 				REPETIR ENQUANTO (contador<20)
 					ESCREVER("Introduza um valor: ")
 					LER(v1)
-					SE (v1<0) ENTAO
-						v1= -1*v1
-					FIMSE
-					SE (RESTO(v1/2)<>0) ENTAO
-						ESCREVER (v1)
+					resultado = parouimpar(v1)
+					SE (resultado=1) ENTAO
+						modint(resultado)
 						ESCREVER ("Este número tem modulo de numero impar")
 					FIMSE
 					contador = contador + 1
