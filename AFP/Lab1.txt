@@ -1,0 +1,134 @@
+	EXE 1:
+
+		Algoritmo1 : Tem como objetivo ver se a soma das variaveis v2,v3 e v4 é menor que a variavel v1 caso seja
+		o resultado será v1 menos a soma das outras variaveis, caso a soma as 3 variaveis seja maior que v1 o resultado irá igualar
+		a zero.
+		
+		Algoritmo2: A sua funcionaliadade é calcular as horas , minutos e segundos de um total de segundos dados. 
+		Como por exemplo 43200s iria dar 12h 00m e 00s.
+		
+		Algoritmo3: A sua função é contar todos os numeros pares do 100 até ao 0, utilizando um ciclo para 
+		chegar a tal resultado.
+		
+	EXE 2:
+		
+		Para a determinação de um numero impar não é necessario uma estrutura de repetição.
+		
+		Embora não seja necessario uma estrutura de  repetição para imprimir os números no intrevalo de 1 a 100,
+		torna-se mais conveniente o uso de tal.
+		
+		Na solicitação de 10 numeros pares é preciso ambas, a estrtura de repetição tal e qual como a de seleção 
+		para selecionar os 10 numeros pares como tambem para repetir até tais números serem fornecidos.
+		
+		A verificaão se um numero se encontra dento dos limites não necessita de uma estrutura de repetição
+		porem necessita de uma estrutura de seleção.
+		
+	EXE 3:
+
+		Ao colocar o contador a zero, teria de inverter os parâmetros no ciclo "repetir enquanto" de forma
+		a repetir enquanto o contador não fosse menor a 100, embora se o contador fosse colocado a 1 teria
+		de ser menor ou igual a 100. Enquanto à soma dos numeros impares basta inverter tambem os parâmetros
+		do se para testar se o valor do contador a dividir por 2 é diferente de 0 pois apenas os numeros impares
+		devolveram resto. Os "steps" do contador tambem têm de ser invertidos para somar em vez de subtrair.
+		
+		
+		Nome: algoritmo3{resultado, contador}
+		Variáveis internas: resultado, contador:número inteiro
+		INICIO
+			contador = 0
+			resultado = 0
+			REPETIR ENQUANTO (contador < 100)
+				SE (RESTO(contador /2) <> 0) ENTAO
+					resultado = contador + resultado
+				FIMSE     
+				contador = contador + 1
+			FIMREPETIR
+		FIM
+		
+	EXE 4:
+		
+		Nome: algoritmo2{seg_Totais, horas, minutos, segundos, seg_Restantes}
+		Variáveis de entrada: seg_Totais: número inteiro
+		Variáveis internas: horas, minutos, segundos, seg_Restantes: número inteiro
+		INICIO
+			SE (seg_Totais <= 0 OU seg_totais >= 10000) ENTAO
+				ESCREVER ("Introduza um numero menor que 10000 ou maior que 0")
+			SENAO
+				horas= seg_Totais / 3600
+				seg_Restantes = RESTO(seg_Totais /3600)
+				minutos = seg_Restantes / 60
+				segundos = RESTO(seg_Restantes /60)
+				ESCREVER (seg_Totais+"s="+horas+"h"+minutos+"m"+segundos+"s")
+			FIMSE
+		FIM
+		
+	EXE 5:
+	
+		Nome: somamult3{v1,contador,resultado}
+		Variáveis de entrada : v1 : número real
+		Variáveis internas : contador : número inteiro 
+		Variáveis de saida : resultado : número real
+		INICIO
+			resultado=contador=0
+			REPETIR ENQUANTO (contador <> 3)
+				ESCREVER ("Introduza um valor: ")
+				LER(v1)
+				SE(RESTO(v1/3)=0)
+					resultado = v1 + resultado
+					contador = contador + 1 
+				FIMSE
+			FIMREPETIR
+			ESCREVER("O resutado da soma é")
+			ESCREVER(resultado)
+		FIM
+		
+	EXE 6: 
+		
+		1:
+			Nome: parouimpar{v1}
+			Variáveis de entrada: v1 : número inteiro
+			INICIO
+				ESCREVER("Introduza um número")
+				LER(v1)
+				SE(RESTO(v1/2)=0) ENTAO
+					ESCREVER("1")
+				SENAO
+					ESCREVER("0");
+				FIMSE
+			FIM
+		
+		2:	
+			Nome:modint{v1}
+			Variáveis de entrada: v1 : número inteiro 
+			INICIO
+				ESCREVER("Introduza um valor:")
+				LER(v1)
+				SE (v1<0) ENTAO
+					v1= -1*v1
+					ESCREVER v1
+				SENAO
+					ESCREVER v1
+				FIMSE
+			FIM
+			
+		3:
+			Nome:vinteimpares{v1,contador}
+			Variáveis de entrada: v1 : número inteiro 
+			Variáveis inteiras: contador : número inteiro 
+			INICIO
+			contador=0
+				REPETIR ENQUANTO (contador<20)
+					ESCREVER("Introduza um valor: ")
+					LER(v1)
+					SE (v1<0) ENTAO
+						v1= -1*v1
+					FIMSE
+					SE (RESTO(v1/2)<>0) ENTAO
+						ESCREVER (v1)
+						ESCREVER ("Este número tem modulo de numero impar")
+					FIMSE
+					contador = contador + 1
+				FIMREPETIR
+			FIM
+		
+			
