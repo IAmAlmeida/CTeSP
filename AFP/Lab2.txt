@@ -1,0 +1,190 @@
+	EXE 1: 
+	
+		Nome: somamult5{v1,contador,resultado}
+		Variáveis de entrada : v1 : número inteiro
+		Variáveis internas : contador : número inteiro
+		INICIO
+			resultado=contador=0
+			REPETIR ENQUANTO (contador <> 5)
+				ESCREVER ("Introduza um valor: ")
+				LER(v1)
+				SE(RESTO(v1/5)=0)
+					contador = contador + 1 
+				FIMSE
+			FIMREPETIR
+		FIM
+		
+	EXE 2:
+	
+		Nome: troco{vtap,vm,troco,notasmoedas[5],nq[5]}
+		Variáveis de entrada : vtap , vm  : número real
+		Variáveis de saida : troco : número real , notasmoedas[5], nq[5] : número inteiro 
+		INICIO
+			ESCREVER ("Introduza o valor total a pagar: ");
+			LER(vtap);
+			ESCREVER ("Introduza agora o valor monetario entregue pelo cliente");
+			LER(vm);
+			
+			SE (vtap>vm) ENTAO
+			
+				ESCREVER("O cliente ainda está a dever :");
+				ESCREVER(vtap-vm);
+				
+			SENAO
+			
+				troco = -(vtap-vm);
+				//notasmoedas de 50 
+				notasmoedas[0] = ARREDONDAR(troco/50,0);
+				nq[0]= RESTO(troco/50);
+				SE (nq[0]>20)ENTAO
+				//notasmoedas de 20
+					notasmoedas[1] = ARREDONDAR(nq[0]/20,0);
+					nq[1]= RESTO(nq[0]/20);
+				SENAO
+					notasmoedas[1] = nq[0];
+					nq[1]= nq[0];
+				FIMSE
+				SE (nq[1]>10)ENTAO
+				//notasmoedas de 10
+					notasmoedas[2] = ARREDONDAR(nq[1]/10,0);
+					nq[2]= RESTO(nq[1]/10);
+				SENAO
+					notasmoedas[2] = nq[1];
+					nq[2]= nq[1];
+				FIMSE
+				
+				SE (nq[2]>5)ENTAO
+				//notasmoedas de 5
+					notasmoedas[3] = ARREDONDAR(nq[2]/5,0);
+					nq[3]= RESTO(nq[2]/5);
+				SENAO
+					notasmoedas[3] = nq[2];
+					nq[3]= nq[2];
+				FIMSE
+				
+				SE (nq[3]>2)ENTAO
+				//notasmoedas de 2
+					notasmoedas[4] = ARREDONDAR(nq[3]/2,0);
+					nq[4]= RESTO(nq[3]/2);
+				SENAO
+					notasmoedas[4] = nq[3];
+					nq[4]= nq[3];
+				FIMSE
+				
+				SE (nq[4]>1)ENTAO
+				//notasmoedas de 1
+					notasmoedas[5] = ARREDONDAR(nq[4]/1,0);
+					nq[5]= RESTO(nq[4]/1);
+				SENAO
+					notasmoedas[5] = nq[4];
+					nq[5]= nq[4];
+				FIMSE
+				
+				ESCREVER("Tem de devolver ao cliente " + notasmoedas[0] + ": notas de 50; " + notasmoedas[1] + ": notas de 20; " + notasmoedas[2] + ": notas de 10; " + notasmoedas[3] + ": notas de 5; " + notasmoedas[4] + ": moedas de 2; "  + notasmoedas[5] + ": moedas de 1; ")
+				
+			FIMSE
+		FIM
+		
+		
+		\\\\\\\\\\\\\\\\\\\\\\\\
+		
+				
+				SE (notas[2]>5)ENTAO
+				//notas de 5
+					notas[3] = RESTO(notas[2]/5);
+				SENAO
+					notas[3] = notas[2];
+				FIMSE
+				
+				SE (moedas[0]>2)ENTAO
+				//moedas de 2
+					moedas[0] = RESTO(notas[3]/2);
+				SENAO
+					notas[3] = notas[2];
+				FIMSE
+				
+				SE (moedas[1]>1)ENTAO
+				//notas de 5
+					notas[3] = RESTO(notas[2]/5);
+				SENAO
+					notas[3] = notas[2];
+				FIMSE
+		\\\\\\\\\\\\\\\\\\\\\\\\
+		
+		
+		EXE 3 : 
+			
+			a)
+				Nome: meses{v1}
+				Variáveis de entrada : v1 : número inteiro
+				
+				INICIO
+					SE(v1<1 ou v1>12) ENTAO
+						RETORNA("Introduza um numero entre 1 e 12");
+					SENAO
+						SELECIONAR(v1)
+							CASO v1=1:RETORNA ("Janeiro");
+							CASO v1=2:RETORNA("Fevereiro");
+							CASO v1=3:RETORNA("Março");
+							CASO v1=4:RETORNA("Abril");
+							CASO v1=5:RETORNA("Maio");
+							CASO v1=6:RETORNA("Junho");
+							CASO v1=7:RETORNA("Julho");
+							CASO v1=8:RETORNA("Agosto");
+							CASO v1=9:RETORNA("Setembro");
+							CASO v1=10:RETORNA("Outubro");
+							CASO v1=11:RETORNA("Novembro");
+							CASO v1=12:RETORNA("Dezembro");
+							PADRAO: RETORNA "INVALIDO";
+						FIMCASO
+					FIMSE
+				FIM
+			
+			b)	
+				Nome: mesesdias{v1}
+				Variáveis de entrada : v1 : número inteiro
+				
+				INICIO
+					SE(v1<1 ou v1>12) ENTAO
+						RETORNA("Introduza um numero entre 1 e 12");
+					SENAO
+						SELECIONAR 
+							CASO v1=1:RETORNA 31;
+							CASO v1=2:RETORNA 28;
+							CASO v1=3:RETORNA 31;
+							CASO v1=4:RETORNA 30;
+							CASO v1=5:RETORNA 31;
+							CASO v1=6:RETORNA 30;
+							CASO v1=7:RETORNA 31;
+							CASO v1=8:RETORNA 31;
+							CASO v1=9:RETORNA 30;
+							CASO v1=10:RETORNA 31;
+							CASO v1=11:RETORNA 30;
+							CASO v1=12:RETORNA 31;
+							PADRAO: RETORNA "INVALIDO";
+						FIMCASO
+					FIMSE
+				FIM
+			
+			c)
+				Nome: mesesdiaano{mes,dia,ano}
+				Variáveis de entrada : mes,dia,ano : número inteiro
+				Variáveis internas : mesex, diaval 
+				
+				INICIO
+					ESCREVER ("Introduza o dia: ")
+					LER(dia);
+					ESCREVER ("Introduza o mes (em numero): ")
+					LER(mes);
+					ESCREVER ("Introduza o dia: ")
+					LER(ano);
+					mesex = meses(mes);
+					diaval= mesesdias(mes);
+					SE (dia>diaval) ENTAO
+						ESCREVER("O mes de " + mesex + "não tem" + dia + "dias");
+					SENAO
+						ESCREVER (dia + "de" + "mesex" + ano)
+					FIMSE
+					
+				FIM
+				
