@@ -86,31 +86,6 @@
 		FIM
 
 
-		\\\\\\\\\\\\\\\\\\\\\\\\
-
-
-				SE (notas[2]>5)ENTAO
-				//notas de 5
-					notas[3] = RESTO(notas[2]/5);
-				SENAO
-					notas[3] = notas[2];
-				FIMSE
-
-				SE (moedas[0]>2)ENTAO
-				//moedas de 2
-					moedas[0] = RESTO(notas[3]/2);
-				SENAO
-					notas[3] = notas[2];
-				FIMSE
-
-				SE (moedas[1]>1)ENTAO
-				//notas de 5
-					notas[3] = RESTO(notas[2]/5);
-				SENAO
-					notas[3] = notas[2];
-				FIMSE
-		\\\\\\\\\\\\\\\\\\\\\\\\
-
 
 		EXE 3 :
 
