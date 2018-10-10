@@ -1,5 +1,5 @@
-	EXE 1: 
-	
+	EXE 1:
+
 		Nome: somamult5{v1,contador,resultado}
 		Variáveis de entrada : v1 : número inteiro
 		Variáveis internas : contador : número inteiro
@@ -9,31 +9,31 @@
 				ESCREVER ("Introduza um valor: ")
 				LER(v1)
 				SE(RESTO(v1/5)=0)
-					contador = contador + 1 
+					contador = contador + 1
 				FIMSE
 			FIMREPETIR
 		FIM
-		
+
 	EXE 2:
-	
+
 		Nome: troco{vtap,vm,troco,notasmoedas[5],nq[5]}
 		Variáveis de entrada : vtap , vm  : número real
-		Variáveis de saida : troco : número real , notasmoedas[5], nq[5] : número inteiro 
+		Variáveis de saida : troco : número real , notasmoedas[5], nq[5] : número inteiro
 		INICIO
 			ESCREVER ("Introduza o valor total a pagar: ");
 			LER(vtap);
 			ESCREVER ("Introduza agora o valor monetario entregue pelo cliente");
 			LER(vm);
-			
+
 			SE (vtap>vm) ENTAO
-			
+
 				ESCREVER("O cliente ainda está a dever :");
 				ESCREVER(vtap-vm);
-				
+
 			SENAO
-			
+
 				troco = -(vtap-vm);
-				//notasmoedas de 50 
+				//notasmoedas de 50
 				notasmoedas[0] = ARREDONDAR(troco/50,0);
 				nq[0]= RESTO(troco/50);
 				SE (nq[0]>20)ENTAO
@@ -52,7 +52,7 @@
 					notasmoedas[2] = nq[1];
 					nq[2]= nq[1];
 				FIMSE
-				
+
 				SE (nq[2]>5)ENTAO
 				//notasmoedas de 5
 					notasmoedas[3] = ARREDONDAR(nq[2]/5,0);
@@ -61,7 +61,7 @@
 					notasmoedas[3] = nq[2];
 					nq[3]= nq[2];
 				FIMSE
-				
+
 				SE (nq[3]>2)ENTAO
 				//notasmoedas de 2
 					notasmoedas[4] = ARREDONDAR(nq[3]/2,0);
@@ -70,7 +70,7 @@
 					notasmoedas[4] = nq[3];
 					nq[4]= nq[3];
 				FIMSE
-				
+
 				SE (nq[4]>1)ENTAO
 				//notasmoedas de 1
 					notasmoedas[5] = ARREDONDAR(nq[4]/1,0);
@@ -79,30 +79,30 @@
 					notasmoedas[5] = nq[4];
 					nq[5]= nq[4];
 				FIMSE
-				
+
 				ESCREVER("Tem de devolver ao cliente " + notasmoedas[0] + ": notas de 50; " + notasmoedas[1] + ": notas de 20; " + notasmoedas[2] + ": notas de 10; " + notasmoedas[3] + ": notas de 5; " + notasmoedas[4] + ": moedas de 2; "  + notasmoedas[5] + ": moedas de 1; ")
-				
+
 			FIMSE
 		FIM
-		
-		
+
+
 		\\\\\\\\\\\\\\\\\\\\\\\\
-		
-				
+
+
 				SE (notas[2]>5)ENTAO
 				//notas de 5
 					notas[3] = RESTO(notas[2]/5);
 				SENAO
 					notas[3] = notas[2];
 				FIMSE
-				
+
 				SE (moedas[0]>2)ENTAO
 				//moedas de 2
 					moedas[0] = RESTO(notas[3]/2);
 				SENAO
 					notas[3] = notas[2];
 				FIMSE
-				
+
 				SE (moedas[1]>1)ENTAO
 				//notas de 5
 					notas[3] = RESTO(notas[2]/5);
@@ -110,14 +110,14 @@
 					notas[3] = notas[2];
 				FIMSE
 		\\\\\\\\\\\\\\\\\\\\\\\\
-		
-		
-		EXE 3 : 
-			
+
+
+		EXE 3 :
+
 			a)
 				Nome: meses{v1}
 				Variáveis de entrada : v1 : número inteiro
-				
+
 				INICIO
 					SE(v1<1 ou v1>12) ENTAO
 						RETORNA("Introduza um numero entre 1 e 12");
@@ -139,16 +139,16 @@
 						FIMCASO
 					FIMSE
 				FIM
-			
-			b)	
+
+			b)
 				Nome: mesesdias{v1}
 				Variáveis de entrada : v1 : número inteiro
-				
+
 				INICIO
 					SE(v1<1 ou v1>12) ENTAO
 						RETORNA("Introduza um numero entre 1 e 12");
 					SENAO
-						SELECIONAR 
+						SELECIONAR
 							CASO v1=1:RETORNA 31;
 							CASO v1=2:RETORNA 28;
 							CASO v1=3:RETORNA 31;
@@ -165,12 +165,12 @@
 						FIMCASO
 					FIMSE
 				FIM
-			
+
 			c)
 				Nome: mesesdiaano{mes,dia,ano}
 				Variáveis de entrada : mes,dia,ano : número inteiro
-				Variáveis internas : mesex, diaval 
-				
+				Variáveis internas : mesex, diaval
+
 				INICIO
 					ESCREVER ("Introduza o dia: ")
 					LER(dia);
@@ -185,6 +185,85 @@
 					SENAO
 						ESCREVER (dia + "de" + "mesex" + ano)
 					FIMSE
-					
+
 				FIM
-				
+
+		4
+			a)
+				Nome: CharOuInt{car}
+				Variáveis de entrada : car : caracter
+				Variáveis internas : resultado : número inteiro
+				INICIO
+					SE (car=0 ou car=1 ou car=2 ou car=3 ou car=4 ou car=5 ou car=6 ou car=7 ou car=8 ou car=9) ENTAO
+						resultado = 1;
+					SENAO
+						resultado = 0;
+					FIMSE
+					RETORNA resultado;
+				FIM
+
+			b)
+				Nome: Vogal{car}
+				Variáveis de entrada : car : caracter
+				Variáveis internas : resultado : número inteiro
+				INICIO
+					SE (car="a" ou car="e" ou car="i" ou car="o" ou car="u" ou car="A" ou car="E" ou car="I" ou car="O" ou car="U") ENTAO
+						resultado = 1;
+					SENAO
+						resultado = 0;
+					FIMSE
+					RETORNA resultado;
+				FIM
+
+			c)
+				Nome: Vogal{contarnum,contarvog,letra}
+				Variáveis de entrada : letra : caracter
+				Variáveis internas : contarnum contarvog : número inteiro
+				INICIO
+					REPETIR ENQUANTO (contarnum<10)
+						ESCREVER("Introduza algum caracter: ");
+						LER(letra);
+
+						SE (CharOuInt(letra)=1) ENTAO
+							contarnum += 1
+						FIMSE
+						SE (Vogal(letra)=1) ENTAO
+							contarvog += 1
+						FIMSE
+					FIMREPETIR
+					ESCREVER("O total de vogais introduzidas foi:" contarvog);
+				FIM
+
+		5
+			a)
+				Nome: Salarios{salario,salliquido}
+				Variáveis de entrada : salario : número real
+				Variáveis de saida : salliquido : número real
+				INICIO
+				    SE (salario<400)ENTAO
+						salliquido = salario / 0.05;
+					FIMSE
+					SE (salario>=400 OU salario<900)ENTAO
+						salliquido = salario / 0.7;
+					FIMSE
+					SE (salario>=900 OU salario<1400)ENTAO
+						salliquido = salario / 0.11;
+					FIMSE
+					SE (salario>1400)ENTAO
+						salliquido = salario / 0.12;
+					FIMSE
+					RETORNA salliquido;
+				FIM
+			b)
+				Nome: salbrutoliquido{salario,salliquido,descontos}
+				Variáveis de entrada : salario : número real
+				Variáveis de saida : salliquido, descontos : número real
+				INICIO
+				   ESCREVER ("Introduza o seu salário: ");
+				   LER(salario);
+				   
+				   salliquido = Salarios(salario);
+				   descontos = salario-salliquido;
+				   
+				   ESCREVER ("O seu salario bruto é :" + salario + ", com os descontos: " + salliquido + ", o total descontado é: "+ descontos)
+				FIM
