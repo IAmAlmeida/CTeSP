@@ -241,29 +241,59 @@
 				Variáveis de saida : salliquido : número real
 				INICIO
 				    SE (salario<400)ENTAO
-						salliquido = salario / 0.05;
-					FIMSE
-					SE (salario>=400 OU salario<900)ENTAO
-						salliquido = salario / 0.7;
-					FIMSE
-					SE (salario>=900 OU salario<1400)ENTAO
-						salliquido = salario / 0.11;
-					FIMSE
-					SE (salario>1400)ENTAO
-						salliquido = salario / 0.12;
+						salliquido = salario * (1-.05);
+					SENAO SE(salario<900)ENTAO
+						salliquido = salario * (1-.07);
+					SENAO SE(salario<1400)ENTAO
+						salliquido = salario * (1-.12);
+					SENAO
+						salliquido = salario * (1-.12);
 					FIMSE
 					RETORNA salliquido;
 				FIM
 			b)
-				Nome: salbrutoliquido{salario,salliquido,descontos}
+				Nome: salbrutoliquido{salario,salliquido,descontos,salariot,salliquidot}
 				Variáveis de entrada : salario : número real
-				Variáveis de saida : salliquido, descontos : número real
+				Variáveis de saida : salliquido, descontos,salariot,salliquidot: número real
 				INICIO
-				   ESCREVER ("Introduza o seu salário: ");
-				   LER(salario);
+				   salariot=salliquidot = 0;
+				   REPETIR 12x
+						ESCREVER ("Introduza o seu salário: ");
+						LER(salario);
+						salliquido = Salarios(salario);
+						
+						salariot += salario;
+						salliquidot += salliquido;
+						
+				   FIMREPETIR
 				   
-				   salliquido = Salarios(salario);
-				   descontos = salario-salliquido;
-				   
-				   ESCREVER ("O seu salario bruto é :" + salario + ", com os descontos: " + salliquido + ", o total descontado é: "+ descontos)
+				   descontos = salariot-salliquidot;
+
+				   ESCREVER ("O seu salario bruto é :" + salariot + ", com os descontos: " + salliquidot + ", o total descontado é: "+ descontos)
 				FIM
+				
+		6
+			a)
+				Nome: somadigitos{num,somadig}
+				Variáveis de entrada : num : número inteiro
+				variavel interna : somadig : número inteiro
+				INICIO
+					REPETIR ENQUANTO(num <> 0)
+						num = num/10;
+						somadig += RESTO(num/10);
+					FIMREPETIR
+					RETORNA somadig;
+				FIM
+			b)
+				Nome: somadigitosuser{num,somadig}
+				Variáveis de entrada : num : número inteiro
+				variavel interna : somadig : número inteiro
+				INICIO
+					REPETIR
+						ESCREVER("Introduza um numero: ")
+						LER (num);
+						ESCREVER(somadigitos(num,0));
+					ENQUANTO (num<1)
+					FIMREPETIR
+				FIM
+				
