@@ -1,0 +1,12 @@
+/**
+ * Porta Not:
+ * out = not in
+ */
+
+CHIP Not {
+    IN in; // pino de entrada
+    OUT out;  // pino de saída
+
+    PARTS:
+    // código de implementação
+}
