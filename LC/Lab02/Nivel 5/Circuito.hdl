@@ -1,0 +1,14 @@
+/**
+ * Porta Or:
+ */
+
+CHIP Circuito {
+    IN a ,b, c;
+    OUT out;
+
+    PARTS:
+    Not(in=b, out=bn);
+    Or(a=a, b=bn, out=and1);
+    Or(a=a, b=c, out=and2);
+    And(a=and1, b=and2, out=out);
+}

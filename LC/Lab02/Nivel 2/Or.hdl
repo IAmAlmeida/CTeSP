@@ -1,0 +1,13 @@
+/**
+ * Porta Or:
+ */
+
+CHIP Or {
+    IN a ,b;
+    OUT out;
+
+    PARTS:
+    Nand(a=a, b=a, out=outnand);
+    Nand(a=b, b=b, out=outnand2);
+    Nand(a=outnand, b=outnand2, out=out);
+}
