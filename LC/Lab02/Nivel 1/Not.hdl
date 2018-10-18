@@ -4,9 +4,9 @@
  */
 
 CHIP Not {
-    IN in; // pino de entrada
-    OUT out;  // pino de saída
+    IN in;
+    OUT out;
 
     PARTS:
-    // código de implementação
+    Nand(a=in, b=in, out=out);
 }
