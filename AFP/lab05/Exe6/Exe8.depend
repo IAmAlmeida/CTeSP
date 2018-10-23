@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1540296011 source:c:\users\dummy\desktop\ctesp\afp\lab05\exe8\main.c
+	<stdio.h>
+	<stdlib.h>
+
