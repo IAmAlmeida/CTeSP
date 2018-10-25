@@ -1,0 +1,27 @@
+/**
+
+ */
+
+CHIP ABC {
+    IN a ,b, c;
+    OUT out;
+    
+    PARTS:
+    Not(in=a, out=an);
+    Not(in=b, out=bn);
+    Not(in=c, out=cn);
+
+    And(a=an, b=bn, out=suband1);
+    And(a=suband1, b=c, out=and1);
+
+    And(a=a, b=b, out=suband2);
+    And(a=suband2, b=cn, out=and2);
+    
+    And(a=an, b=b, out=suband3);
+    And(a=suband3, b=c, out=and3);
+    
+    Or(a=and1, b=and2, out=subor1);
+    Or(a=subor1, b=and3, out=out);
+   
+    
+}

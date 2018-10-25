@@ -1,0 +1,15 @@
+/**
+
+ */
+
+CHIP Circuito3 {
+    IN a ,b, c;
+    OUT out;
+    
+    PARTS:
+    Not(in=a, out=an);
+    And(a=an, b=b, out=outal1);
+    And(a=an, b=c, out=outal2);
+    Or(a=outal1, b=outal2, out=out);
+    
+}

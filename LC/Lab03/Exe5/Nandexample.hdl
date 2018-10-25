@@ -1,0 +1,15 @@
+/**
+
+ */
+
+CHIP Nandexample {
+    IN a ,b;
+    OUT out;
+    
+    PARTS:
+        ABC(a=a,b=b,c=true,out=out1);
+        ABC(a=out1,b=a,c=true,out=out);
+        
+
+    
+}

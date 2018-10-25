@@ -1,0 +1,30 @@
+/**
+
+ */
+
+CHIP Circuito1 {
+    IN a ,b, c;
+    OUT out;
+
+    PARTS:
+    Not(in=a, out=an);
+    Not(in=b, out=bn);
+    Not(in=c, out=cn);
+    //or (a´+b´+c´)
+    Or(a=an, b=bn, out=orsub1);
+    Or(a=orsub1, b=cn, out= or1);
+    //or (a+b´+c)
+    Or(a=a, b=bn, out=orsub2);
+    Or(a=orsub2, b=c, out= or2);
+     //or (a'+b+c)
+    Or(a=an, b=b, out=orsub3);
+    Or(a=orsub3, b=c, out= or3);
+    //or (a'+b+c)
+    Or(a=an, b=bn, out=orsub4);
+    Or(a=orsub4, b=c, out= or4);
+    //ands
+    And(a=or1, b=or2, out=and1);
+    And(a=and1, b=or3, out=and2);
+    And(a=and2, b=or4, out=out);
+    
+}

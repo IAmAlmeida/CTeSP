@@ -1,0 +1,19 @@
+/**
+
+ */
+
+CHIP Circuito2 {
+    IN a ,b, c;
+    OUT out;
+
+    PARTS:
+    Circuito1(a=a,b=b,c=c,out=out1);
+
+    Not(in=a, out=oua);
+    Not(in=c, out=ouc);
+    And(a=oua, b=b, out=ouw);
+    And(a=ouw, b=ouc, out=out2);
+
+    Xor(a=out2, b=out1, out=out);
+    
+}
