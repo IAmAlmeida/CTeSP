@@ -4,19 +4,102 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="js/code.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
-    <link href="styles/style.css" rel="stylesheet">
-    <title>Lab01</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>  
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <title>Livraria Online</title>
 </head>
 <body>
-    <center>
-        <h1>Test</h1>
-    </center>
-    <br>
-    <label>Numero: </label> 
-    <input type="number" onkeypress="testenter(event,this.value);">
-    <br>
-    <label id="result" name="result"></label>
+    <table id="header" style="margin:15px;">
+        <tr>
+            <td style="min-width:10%">
+                <img src="../imgs/bertrand.png" style="width: 200px;height: 50px;margin-right: 50px;position: sticky;">
+            </th>
+            <td style="min-width:30%">
+                <div class="input-group mb-3">
+                    <input style="width:500px;height:40px;" type="text" class="form-control" placeholder="Pesquisar" aria-label="Pesquisar" aria-describedby="basic-addon1">
+                    <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1" ><i class="fas fa-search"></i></span>
+                    </div>
+                  </div>
+            </th>
+            <td style="min-width:50%;">
+                <table style="float:right">
+                    <tr>
+                        <td>
+                            <a href="https://www.google.com"><i style="font-size: 25px ;margin: 0px 15px 0px 15px;" class="fas fa-user"></i></a>
+                        </th>
+                        <td>
+                            <a href="help/help.html"><i style="font-size: 25px ;margin: 0px 15px 0px 15px;" class="fas fa-question"></i></a>
+                        </th>
+                        <td>
+                            <a href="https://www.google.com"><i style="font-size: 25px ;margin: 0px 15px 0px 15px;" class="fas fa-book"></i></a>
+                        </th>
+                        <td>
+                            <a href="https://www.google.com"><i style="font-size: 25px ;margin: 0px 15px 0px 15px;" class="fas fa-shopping-basket"></i></a>
+                        </th>
+                        <td>
+                            <a href="https://www.google.com"><i style="font-size: 25px ;margin: 0px 15px 0px 15px;" class="fas fa-bible"></i></a>
+                        </th>
+                    </tr>
+                </table>
+            </th>
+        </tr>
+    </table>
+    
+    <table id="content" style="width:84.5%;float:right;margin-right: 15px">
+        <tr>
+            <td>
+                <img style="width: 100%;height: 400px;" src="imgs/contry-day.jpg">
+            </td>    
+        </tr>
+    </table>
+    <table id="sidebar" style="width:14.5%;float:left;">
+            <tr>
+                    <div class="dropdown">
+                            <button class="btn" type="button" style="width:14.5%;background-color:transparent;color:#ffa500;font-weight: bolder;border:0px transparent" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Livros
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="#">Em Português</a>
+                              <a class="dropdown-item" href="#">Em Inglês</a>
+                              <a class="dropdown-item" href="#">Em Espanhol</a>
+                              <a class="dropdown-item" href="#">Em Francês</a>
+                            </div>
+                    </div>
+                    <div class="dropdown">
+                            <button class="btn btn-secondary" type="button" style="width:14.5%;margin-top:30px;background-color:transparent;color:#ffa500;font-weight: bolder;border:0px transparent" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Ebooks
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="#">Action</a>
+                              <a class="dropdown-item" href="#">Another action</a>
+                              <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                    </div>
+                    <div class="dropdown">
+                            <button class="btn btn-secondary" type="button" style="width:14.5%;margin-top:30px;background-color:transparent;color:#ffa500;font-weight: bolder;border:0px transparent" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Livros Escolares
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="#">Action</a>
+                              <a class="dropdown-item" href="#">Another action</a>
+                              <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                    </div>
+                    <div class="dropdown">
+                            <button class="btn btn-secondary" type="button" style="width:14.5%;margin-top:30px;background-color:transparent;color:#ffa500;font-weight: bolder;border:0px transparent" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Apoio Escolar
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="#">Action</a>
+                              <a class="dropdown-item" href="#">Another action</a>
+                              <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                    </div>
+            </tr>
+        </table>
 </body>
 </html>
