@@ -1,0 +1,91 @@
+a.menu{
+    -o-transition:.2s;
+    -ms-transition:.2s;
+    -moz-transition:.2s;
+    -webkit-transition:.2s;
+    /* ...and now for the proper property */
+    transition:.2s;
+    width: 100%;
+    background: lightgray;
+    color:black;
+    margin: 2px;
+}
+a.menu:hover{
+    background: linear-gradient( rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07) ), lightgray;
+}
+a.empty{
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
+a{
+    color:black;
+    line-break: normal;
+}
+.header {
+    padding: 10px 16px;
+    background: white
+  }
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  .sticky + .content {
+    padding-top: 102px;
+  }
+  a.icon{
+    -o-transition:.2s;
+    -ms-transition:.2s;
+    -moz-transition:.2s;
+    -webkit-transition:.2s;
+    /* ...and now for the proper property */
+    transition:.2s;
+  }
+  a.icon:hover{
+      color: orangered;
+  }
+  .sidenav {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+body{
+    padding: 15px
+}
+img.booksize{
+    width: 160px;
+    height:230px;
+    margin-bottom: 10px;
+    
+}
+div.circle{
+    border-radius: 50%;
+    background:orangered;
+    position: absolute;
+    border:  10px white;
+    border: 2px solid white;
+    bottom:30px;
+    width:50px;
+    height:50px;
+}
+div.circletext{
+    height: inherit;
+    vertical-align: middle;
+    text-align:center;
+    top:20%;
+    position: relative; /*nao esquecer desta treta*/
+    color:white
+}
+div.price{
+    padding:10px;
+    font-size: 20px
+}

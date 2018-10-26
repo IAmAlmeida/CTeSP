@@ -1,0 +1,65 @@
+<a href="#livros" class="btn menu" data-toggle="collapse">Livros</a>
+                        <div id="livros" class="collapse">
+                            <a class="btn menu empty" target="_a" href="https://www.google.com">Em Português</a>
+                            <a class="btn menu empty"target="_a" href="https://www.google.com">Em Inglês</a>
+                            <a class="btn menu empty"target="_a" href="https://www.google.com">Em Espanhol</a>
+                            <a class="btn  menu empty" target="_a" href="https://www.google.com">Em Francês</a>
+                        </div>
+                        <a href="#ebook" class="btn menu" data-toggle="collapse">Ebooks</a>
+                        <div id="ebook" class="collapse">
+                            <a class="btn menu empty" target="_a" href="https://www.google.com">Em Português</a>
+                            <a class="btn menu empty"target="_a" href="https://www.google.com">Em Inglês</a>
+                        </div>
+                        <a class="btn menu" target="_a" href="https://www.google.com">Escolares</a>
+                        <a href="#apoio" class="btn menu" data-toggle="collapse">Apoio Escolar</a>
+                        <div id="apoio" class="collapse">
+                                <a class="btn menu empty" target="_a" href="https://www.google.com">Pré-Escolar</a><br>
+                                <a class="btn menu empty" target="_a" href="https://www.google.com">1º Ano</a><br>
+                                <a class="btn menu empty" target="_a" href="https://www.google.com">2º Ano</a><br>
+                                <a class="btn menu empty" target="_a" href="https://www.google.com">3º Ano</a><br>
+                                <a class="btn menu empty" target="_a" href="https://www.google.com">4º Ano</a><br>
+                                <a class="btn menu empty" target="_a" href="https://www.google.com">5º Ano</a><br>
+                                <a class="btn menu empty" target="_a" href="https://www.google.com">6º Ano</a><br>
+                                <a class="btn menu empty" target="_a" href="https://www.google.com">7º Ano</a><br>
+                                <a class="btn menu empty" target="_a" href="https://www.google.com">8º Ano</a><br>
+                                <a class="btn menu empty" target="_a" href="https://www.google.com">9º Ano</a><br>
+                                <a class="btn menu empty" target="_a" href="https://www.google.com">10º Ano</a><br>
+                                <a class="btn menu empty" target="_a" href="https://www.google.com">11º Ano</a><br>
+                                <a class="btn menu empty" target="_a" href="https://www.google.com">12º Ano</a><br>                       
+                        </div>
+                        //sidebar
+
+                        <td>
+                            <a class="icon" href="https://www.google.com"><i style="font-size: 25px ;margin: 0px 15px 0px 15px;" class="fas fa-user"></i></a>
+                        </td>
+                        <td>
+                            <a class="icon" href="help/help.html"><i style="font-size: 25px ;margin: 0px 15px 0px 15px;" class="fas fa-question"></i></a>
+                        </td>
+                        <td>
+                            <a class="icon" href="https://www.google.com"><i style="font-size: 25px ;margin: 0px 15px 0px 15px;" class="fas fa-book"></i></a>
+                        </td>
+                        <td>
+                            <a class="icon" href="https://www.google.com"><i style="font-size: 25px ;margin: 0px 15px 0px 15px;" class="fas fa-shopping-basket"></i></a>
+                        </td>
+                        <td>
+                            <a class="icon" href="https://www.google.com"><i style="font-size: 25px ;margin: 0px 25px 0px 15px;" class="fas fa-bible"></i></a>
+                        </td>
+                        //iconbar
+                        
+                        <td style="min-width:10%">
+                <img src="imgs/bertrand.png" style="width: 200px;height: 50px;margin-right: 50px; padding:5px">
+            </td>
+            <td style="min-width:30%;padding: 20px">
+                <div class="input-group mb-3">
+                    <input style="width:500px;height:40px;padding:20px" type="text" class="form-control" placeholder="Pesquisar" aria-label="Pesquisar" aria-describedby="basic-addon1">
+                    <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1" ><i class="fas fa-search"></i></span>
+                    </div>
+                  </div>
+            </td>
+            // header
+
+             <td>
+                    <img style="width: 100%;height: 400px;" src="imgs/contry-day.jpg">
+                </td>
+                //body
