@@ -89,3 +89,7 @@ div.price{
     padding:10px;
     font-size: 20px
 }
+div.footer{
+    bottom:0;
+    background: #333f33;
+}
