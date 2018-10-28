@@ -1,0 +1,47 @@
+.fas.fa-user{
+    color:#F06060;
+}
+.fas.fa-question{
+    color:#F06060;
+}
+.fas.fa-shopping-cart{
+    color:#F06060;
+}
+.sidenav {
+    height: 100%;
+    width: 15%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #F06060;
+    overflow-x: hidden;
+    padding-top: 5%;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: grey;
+}
+
+.main {
+    margin-left: 12%; 
+    font-size: 28px; 
+    padding: 0px 10px;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #F06060;
+    color: white;
+    text-align: center;
+ }

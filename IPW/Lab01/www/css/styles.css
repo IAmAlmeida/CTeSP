@@ -19,7 +19,17 @@
 	float: right;
 
 }
-
+footer{
+    text-align: center;
+}
+span.title{
+    font-size: 25px;
+    font-weight: bold;
+}
+span.content{
+    text-align: justify;
+    line-break: auto;
+}
 header {
     /*Strictly Necessary */
     padding-top:20px;
@@ -39,7 +49,7 @@ header {
 
 main, section, footer {
     /*Aesthetics*/        
-	 margin: 5px; 
+	 margin: 25px; 
 	 padding: 20px;
 }
 
