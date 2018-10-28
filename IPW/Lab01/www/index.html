@@ -1,149 +1,172 @@
-<!DOCTYPE html>
-<html lang="pt">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>  
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.css">
-    <title>Livraria Online</title>
-</head>
-<body>
-    <center>
-        <div class="row " id="header">
-            <div class="col-2">
-                <img src="imgs/bertrand.png" style="width: 250px;height: 50px;margin-right: 50px; padding:5px">
-            </div>
-            <div class="col-4">
-                    <div class="input-group mb-3">
-                        <input style="width:50px;height:40px;padding:20px" type="text" class="form-control" placeholder="Pesquisar" aria-label="Pesquisar" aria-describedby="basic-addon1">
-                        <div class="input-group-prepend">
-                                <span class="input-group-text" id="basic-addon1" ><i class="fas fa-search"></i></span>
-                        </div>
-                    </div>
-            </div>
-            <div style="text-align: right;" class="col">    
-                <a class="icon" href="https://www.google.com"><i style="font-size: 25px ;margin: 0px 15px 0px 15px;" class="fas fa-user"></i></a>
-                <a class="icon" href="help/help.html"><i style="font-size: 25px ;margin: 0px 15px 0px 15px;" class="fas fa-question"></i></a>
-                <a class="icon" href="https://www.google.com"><i style="font-size: 25px ;margin: 0px 15px 0px 15px;" class="fas fa-book"></i></a>
-                <a class="icon" href="https://www.google.com"><i style="font-size: 25px ;margin: 0px 15px 0px 15px;" class="fas fa-shopping-basket"></i></a>
-                <a class="icon" href="https://www.google.com"><i style="font-size: 25px ;margin: 0px 25px 0px 15px;" class="fas fa-bible"></i></a>   
-            </div>
-        </div>
-    </center>
-        <div id="content" class="content row">
-            <div class="col-2">
-                    <a href="#livros" class="btn menu" style="width:100%;" data-toggle="collapse">Livros</a>
-                    <div id="livros" class="collapse">
-                        <a class="btn menu empty" target="_a" href="https://www.google.com">Em Português</a>
-                        <a class="btn menu empty"target="_a" href="https://www.google.com">Em Inglês</a>
-                        <a class="btn menu empty"target="_a" href="https://www.google.com">Em Espanhol</a>
-                        <a class="btn  menu empty" target="_a" href="https://www.google.com">Em Francês</a>
-                    </div>
-                    <a href="#ebook" class="btn menu" data-toggle="collapse">Ebooks</a>
-                    <div id="ebook" class="collapse">
-                        <a class="btn menu empty" target="_a" href="https://www.google.com">Em Português</a>
-                        <a class="btn menu empty"target="_a" href="https://www.google.com">Em Inglês</a>
-                    </div>
-                    <a class="btn menu" target="_a" href="https://www.google.com">Escolares</a>
-                    <a href="#apoio" class="btn menu" data-toggle="collapse">Apoio Escolar</a>
-                    <div id="apoio" class="collapse">
-                            <a class="btn menu empty" target="_a" href="https://www.google.com">Pré-Escolar</a><br>
-                            <a class="btn menu empty" target="_a" href="https://www.google.com">1º Ano</a><br>
-                            <a class="btn menu empty" target="_a" href="https://www.google.com">2º Ano</a><br>
-                            <a class="btn menu empty" target="_a" href="https://www.google.com">3º Ano</a><br>
-                            <a class="btn menu empty" target="_a" href="https://www.google.com">4º Ano</a><br>
-                            <a class="btn menu empty" target="_a" href="https://www.google.com">5º Ano</a><br>
-                            <a class="btn menu empty" target="_a" href="https://www.google.com">6º Ano</a><br>
-                            <a class="btn menu empty" target="_a" href="https://www.google.com">7º Ano</a><br>
-                            <a class="btn menu empty" target="_a" href="https://www.google.com">8º Ano</a><br>
-                            <a class="btn menu empty" target="_a" href="https://www.google.com">9º Ano</a><br>
-                            <a class="btn menu empty" target="_a" href="https://www.google.com">10º Ano</a><br>
-                            <a class="btn menu empty" target="_a" href="https://www.google.com">11º Ano</a><br>
-                            <a class="btn menu empty" target="_a" href="https://www.google.com">12º Ano</a><br>                       
-                    </div>
-            </div>
-            <div class="col">
-            <img style="padding-bottom:20px;width: 100%;height: 400px;" src="imgs/contry-day.jpg">
-                <div class="row">
-                    <div class="col"></div>
-                    <div class="col-10">
-                        <div class="row">
-                            <div class="col">
-                                    <div class="book">
-                                        <img class="booksize" src="imgs/Hitler_The_Fuehrer.jpg">
-                                        <div class="circle">
-                                            <div class="circletext">
-                                                20%
-                                            </div>
-                                        </div>
-                                    </div>
-                            </div>
-                            <div class="col">
-                                    <div class="book">
-                                        <img class="booksize" src="imgs/Hitler_The_Fuehrer.jpg">
-                                        <div class="circle">
-                                            <div class="circletext">
-                                                20%
-                                            </div>
-                                        </div>
-                                    </div>
-                            </div>
-                            <div class="col">
-                                    <div class="book">
-                                        <img class="booksize" src="imgs/Hitler_The_Fuehrer.jpg">
-                                        <div class="circle">
-                                            <div class="circletext">
-                                                20%
-                                            </div>
-                                        </div>
-                                    </div>
-                            </div>
-                            <div class="col">
-                                    <div class="book">
-                                        <img class="booksize" src="imgs/Hitler_The_Fuehrer.jpg">
-                                        <div class="circle">
-                                            <div class="circletext">
-                                                20%
-                                            </div>
-                                        </div>
-                                    </div>
-                            </div>
-                            <div class="col">
-                                    <div class="book">
-                                        <img class="booksize" src="imgs/Hitler_The_Fuehrer.jpg">
-                                        <div class="circle">
-                                            <div class="circletext">
-                                                20%
-                                            </div>
-                                        </div>
-                                    </div>
-                            </div>
-                            <div class="col">
-                                    <div class="book">
-                                        <img class="booksize" src="imgs/Hitler_The_Fuehrer.jpg">
-                                        <div class="circle">
-                                            <div class="circletext">
-                                                20%
-                                            </div>
-                                            <div class="price">
-                                                19,84€
-                                            </div>
-                                        </div>
-                                    </div>
-                            </div>     
-                        </div>
-                    </div>
-                    <div class="col"></div>        
+<html>
+<!--...-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>  
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/styles.css">
+        <title>Livraria Online</title>
+    </head>
+  
+	<body>
+    
+		<div id="sidebar">
+                <a href="#livros" class="btn menu" style="width:100%;" data-toggle="collapse">Livros</a>
+                <div id="livros" class="collapse">
+                    <a class="btn menu empty" target="_a" href="https://www.google.com">Em Português</a>
+                    <a class="btn menu empty"target="_a" href="https://www.google.com">Em Inglês</a>
+                    <a class="btn menu empty"target="_a" href="https://www.google.com">Em Espanhol</a>
+                    <a class="btn  menu empty" target="_a" href="https://www.google.com">Em Francês</a>
                 </div>
-            </div>
+                <a href="#ebook" class="btn menu" data-toggle="collapse">Ebooks</a>
+                <div id="ebook" class="collapse">
+                    <a class="btn menu empty" target="_a" href="https://www.google.com">Em Português</a>
+                    <a class="btn menu empty"target="_a" href="https://www.google.com">Em Inglês</a>
+                </div>
+                <a class="btn menu" target="_a" href="https://www.google.com">Escolares</a>
+                <a href="#apoio" class="btn menu" data-toggle="collapse">Apoio Escolar</a>
+                <div id="apoio" class="collapse">
+                        <a class="btn menu empty" target="_a" href="https://www.google.com">Pré-Escolar</a><br>
+                        <a class="btn menu empty" target="_a" href="https://www.google.com">1º Ano</a><br>
+                        <a class="btn menu empty" target="_a" href="https://www.google.com">2º Ano</a><br>
+                        <a class="btn menu empty" target="_a" href="https://www.google.com">3º Ano</a><br>
+                        <a class="btn menu empty" target="_a" href="https://www.google.com">4º Ano</a><br>
+                        <a class="btn menu empty" target="_a" href="https://www.google.com">5º Ano</a><br>
+                        <a class="btn menu empty" target="_a" href="https://www.google.com">6º Ano</a><br>
+                        <a class="btn menu empty" target="_a" href="https://www.google.com">7º Ano</a><br>
+                        <a class="btn menu empty" target="_a" href="https://www.google.com">8º Ano</a><br>
+                        <a class="btn menu empty" target="_a" href="https://www.google.com">9º Ano</a><br>
+                        <a class="btn menu empty" target="_a" href="https://www.google.com">10º Ano</a><br>
+                        <a class="btn menu empty" target="_a" href="https://www.google.com">11º Ano</a><br>
+                        <a class="btn menu empty" target="_a" href="https://www.google.com">12º Ano</a><br>                       
+                </div>
         </div>
-        <div class="footer">
-            
-        </div>
-</body>
+        <header> 
+                <div class="row" id="header">
+                        <div class="col-3">
+                            <img src="imgs/bertrand.png" style="width: 250px;height: 50px;margin-right: 50px; padding:5px">
+                        </div>
+                        <div class="col">
+                                <div class="input-group mb-3">
+                                    <input style="width:50px;height:40px;padding:20px" type="text" class="form-control" placeholder="Pesquisar" aria-label="Pesquisar" aria-describedby="basic-addon1">
+                                    <div class="input-group-prepend">
+                                            <span class="input-group-text" id="basic-addon1" ><i class="fas fa-search"></i></span>
+                                    </div>
+                                </div>
+                        </div>
+                        <div style="text-align: right;" class="col-3">    
+                            <a class="icon" href="https://www.google.com"><i style="font-size: 15px ;margin: 0px 15px 0px 15px;" class="fas fa-user"></i></a>
+                            <a class="icon" href="help/help.html"><i style="font-size: 15px ;margin: 0px 15px 0px 15px;" class="fas fa-question"></i></a>
+                            <a class="icon" href="https://www.google.com"><i style="font-size: 15px ;margin: 0px 15px 0px 15px;" class="fas fa-book"></i></a>
+                            <a class="icon" href="https://www.google.com"><i style="font-size: 15px ;margin: 0px 15px 0px 15px;" class="fas fa-shopping-basket"></i></a>
+                            <a class="icon" href="https://www.google.com"><i style="font-size: 15px ;margin: 0px 25px 0px 15px;" class="fas fa-bible"></i></a>   
+                        </div>
+                    </div>  
+        </header>
+		<div id="rightSideWrapper">
+			
+			
+			<div class="ContentBox"><!--. poner en minusculas.-->
+				<main> 
+                        <img style="padding-bottom:20px;width: 100%;height: 400px;" src="imgs/contry-day.jpg">
+				</main>
+
+				<section>
+                        
+                    <div class="row">
+                            <div class="col">
+                                <div class="row">
+                                    <div class="col book">
+                                            <img class="booksize" src="imgs/Hitler_The_Fuehrer.jpg">
+                                            <div class="price row">
+                                                <div class="col discountprice">20&euro;</div>
+                                            </div>
+                                            <div class="description">
+                                                A Amante do Governador<br>De: José Rodrigues Dos Santos<br>
+                                                <a href="https://www.google.com" target="_a"><i class="fas fa-shopping-cart"></i></a>
+                                            </div>
+                                    </div>
+                                    <div class="col book">
+                                            <img class="booksize" src="imgs/Hitler_The_Fuehrer.jpg">
+                                            <div class="circle">
+                                                <div class="circletext">
+                                                    20%
+                                                </div>
+                                            </div>
+                                            <div class="price row">
+                                                <div class="col originalprice">20&euro;</div>
+                                                <div class="col discountprice">16&euro;</div>
+                                            </div>
+                                            <div class="description">
+                                                A Amante do Governador<br>De: José Rodrigues Dos Santos<br>
+                                                <a href="https://www.google.com" target="_a"><i class="fas fa-shopping-cart"></i></a>
+                                            </div>
+                                    </div>
+                                    <div class="col book">
+                                            <img class="booksize" src="imgs/A_amante.jpg">
+                                            <div class="circle">
+                                                <div class="circletext">
+                                                    20%
+                                                </div>
+                                            </div>
+                                            <div class="price row">
+                                                <div class="col originalprice">20&euro;</div>
+                                                <div class="col discountprice">16&euro;</div>
+                                            </div>
+                                            <div class="description">
+                                                A Amante do Governador<br>De: José Rodrigues Dos Santos<br>
+                                                <span class="ofs">Out of Stock</span>
+                                            </div>
+                                    </div>
+                                    <div class="col book">
+                                            <img class="booksize" src="imgs/A_amante.jpg">
+                                            <div class="price row">
+                                                <div class="col discountprice">20&euro;</div>
+                                            </div>
+                                            <div class="description">
+                                                A Amante do Governador<br>De: José Rodrigues Dos Santos<br>
+                                                <a href="https://www.google.com" target="_a"><i class="fas fa-shopping-cart"></i></a>
+                                            </div>
+                                    </div>
+                                    <div class="col book">
+                                            <img class="booksize" src="imgs/A_amante.jpg">
+                                            <div class="circle">
+                                                <div class="circletext">
+                                                    20%
+                                                </div>
+                                            </div>
+                                            <div class="price row">
+                                                <div class="col originalprice">20&euro;</div>
+                                                <div class="col discountprice">16&euro;</div>
+                                            </div>
+                                            <div class="description">
+                                                A Amante do Governador<br>De: José Rodrigues Dos Santos<br>
+                                                <a href="https://www.google.com" target="_a"><i class="fas fa-shopping-cart"></i></a>
+                                            </div>
+                                            
+                                    </div>
+                                </div>
+                            </div>       
+                        </div>
+                    </div>
+				</section>
+
+				<footer> 
+					Feito por : João Almeida & João Marques
+				</footer>
+
+			</div>
+			
+		</div>
+
+	</body>
+	
+
+	
+
 </html>
