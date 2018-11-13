@@ -1,0 +1,63 @@
+Page 43 
+
+Exe 8
+
+	1-White-hat
+	2-Ping sweep
+	3-TCP/IP
+	4-Certificates
+	5-Worms
+	6-Spear
+
+Exe 9
+
+	1-D
+	2-E
+	3-C
+	4-None
+	5-A
+	6-B
+
+Exe 10
+	
+	1-War
+	2-BotNet
+	3-Zombies
+	4-Denial of service
+	5-Identity theft
+	6-Keylogger
+	7-Pharming
+	8-Spyware
+
+Page 7
+
+Exe 9
+	Upgrade
+	Download
+	E-book
+	Tele-Working
+	Cyber-Crime
+
+	HardWare
+	Waveband
+	Broadcast
+	Smartphone
+	Gigabyte	
+
+
+Exe 10
+	
+	1-Teleworking
+	2-Cybercrimes / spywares
+	3-Gigabyte	
+	4-Downtime
+	5-Spyware/adware
+	6-Upgrade
+
+Pag 51
+
+Exe8
+	
+
+
+	
