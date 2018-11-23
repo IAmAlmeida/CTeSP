@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+    /* https://www.w3schools.com/cssref/css3_pr_box-sizing.asp */
+}
+
+body {
+    background-color: beige;
+}
+
+header {
+    text-align: center;
+    color: aliceblue;
+    background-color: darkslateblue;
+    font-size: 3em;
+}
+
+header img {
+    float: left;
+    width: 60px;
+}
+
+img {
+    float: left;
+}
+.column {
+    float: left;
+    width: 33%;
+    padding: 10px;
+}
+.row {
+    border: 2px solid salmon;
+}
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
