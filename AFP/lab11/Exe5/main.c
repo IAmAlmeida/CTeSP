@@ -1,28 +1,41 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
+
 int main()
 {
 	setlocale(LC_ALL, "Portuguese");
 	char nome[150];
-	int i=0,k=0,spacepos=0;
+	int i=0,k=0,pos=0,m=0,j=0;
     printf("Introduza o seu nome: ");
     gets(nome);
-    do{
-
-            if(!((nome[i]>'A'&&'Z'<nome[i]) || (nome[i]>'a'&&'z'<nome[i]) || (nome[i]>='0'&&'9'<=nome[i])) ){
-                spacepos=i;
-                if(nome[spacepos]!=' '){
-                    spacepos=0;
-                }
+    m=strlen(nome)-1;
+    while(nome[i]!='\0')
+    {
+        if (nome[i]==' '){
+            k=i+1;
+            if(pos==0){
+                pos=i;
             }
-            i++;
-    }while(nome[i]!='\0');
-
-    i=spacepos+1;
-    do{
-        printf("%c",nome[i]);
+        }
         i++;
-    }while(nome[i]!='\0');
+    }
+
+    for(j=0;j<=pos;j++){
+
+        if(j==-1){
+            break;
+        }
+    printf("%c",nome[j]);
+    }
+    for(j=k;j<=m;j++){
+        if(nome[j]=='\0'){
+            break;
+        }
+        printf("%c",nome[j]);
+    }
+
+
+
     return 0;
 }
