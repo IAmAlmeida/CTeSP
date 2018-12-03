@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="miguel.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body class="bg">
+    <div style="text-align:center"><span style="font-size:35px;cursor:pointer;" onclick="openNav()">&#9776;</span></div>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="font-size:35px;width:100%;">&#9776;</a>
+        <ul>
+            <li><a class="bloco" href="portfolio.html" onclick="closeNav()">PORTFÓLIO</a></li>
+            <li><a class="bloco" href="#" onclick="closeNav()"><label for="modal-1">SHOWS</label></a></li>
+            <li><a class="bloco" href="#" onclick="closeNav()"><label for="modal-2">MÚSICA</label></a></li>
+            <li><a class="bloco" href="#" onclick="closeNav()"><label for="modal-3">CONTACTO</label></a></li></br>
+            <li style="display: inline;"><a class="linha" href="https://www.spotify.com/pt/" target="blank"><i class="fab fa-spotify"></i></a></li>
+            <li style="display: inline;"><a class="linha" href="https://soundcloud.com/" target="blank"><i class="fab fa-soundcloud"></i></a></li>
+            <li style="display: inline;"><a class="linha" href="https://twitter.com/?lang=pt_pt" target="blank"><i
+                        class="fab fa-twitter"></i></a></li>
+            <li style="display: inline;"><a class="linha" href="https://www.youtube.com/?hl=pt-PT&gl=PT" target="blank"><i
+                        class="fab fa-youtube"></i></a></li>
+            <li style="display: inline;"><a class="linha" href="https://www.instagram.com/" target="blank"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+    </div>
+
+    <div class="logo-res"><img src="logo.png" alt="Smiley face" height="120" class="logo"></div>
+    <div class="centro">Amália Rodrigues</br>19º Aniversário</br>06/10/18</br>
+        <a style="font-weight: none;font-size: 0.5em;background-color: green;" href="https://www.spotify.com/pt/"
+            target="blank" class="button3"><i class="fab fa-spotify"></i>&nbspSpotify</a>
+        <a style="font-weight: none;font-size: 0.5em;background-color: #BA0725;" href="http://amaliarodrigues.pt/"
+            target="blank" class="button3"><i class="fas fa-music"></i>&nbspFundação
+            Amália</a></br>
+        <img src="album1.jpg" alt="Smiley face" height="160" class="album"><img src="album2.jpg" alt="Smiley face"
+            height="160" class="album">
+    </div>
+
+    <input class="modal-state" id="modal-1" type="checkbox" />
+    <div class="modal">
+        <label class="modal__bg" for="modal-1"></label>
+        <div class="modal__inner">
+            <label class="modal__close" for="modal-1"></label>
+            <div style="font-size: 3em;text-align: center;color: #BA0725;font-weight: bold;">SHOWS</div>
+            <div class="grid-container">
+                <div class="grid-item">Data</div>
+                <div class="grid-item">País/Cidade</div>
+                <div class="grid-item">Local</div>
+                <div class="grid-item" style="background-color: lightgrey">31-12-2018</div>
+                <div class="grid-item" style="background-color: lightgrey">México, Puerto Vallarta</div>
+                <div class="grid-item" style="background-color: lightgrey">Secrets Vallarta Bay</div>
+                <div class="grid-item">01-06-2019</div>
+                <div class="grid-item">Espanha, Barcelona</div>
+                <div class="grid-item">RCDE Stadium</div>
+                <div class="grid-item" style="background-color: lightgrey">31-12-2018</div>
+                <div class="grid-item" style="background-color: lightgrey">México, Puerto Vallarta</div>
+                <div class="grid-item" style="background-color: lightgrey">Secrets Vallarta Bay</div>
+                <div class="grid-item">01-06-2019</div>
+                <div class="grid-item">Espanha, Barcelona</div>
+                <div class="grid-item">RCDE Stadium</div>
+                <div class="grid-item" style="background-color: lightgrey">31-12-2018</div>
+                <div class="grid-item" style="background-color: lightgrey">México, Puerto Vallarta</div>
+                <div class="grid-item" style="background-color: lightgrey">Secrets Vallarta Bay</div>
+                <div class="grid-item">01-06-2019</div>
+                <div class="grid-item">Espanha, Barcelona</div>
+                <div class="grid-item">RCDE Stadium</div>
+                <div class="grid-item" style="background-color: lightgrey">31-12-2018</div>
+                <div class="grid-item" style="background-color: lightgrey">México, Puerto Vallarta</div>
+                <div class="grid-item" style="background-color: lightgrey">Secrets Vallarta Bay</div>
+                <div class="grid-item">01-06-2019</div>
+                <div class="grid-item">Espanha, Barcelona</div>
+                <div class="grid-item">RCDE Stadium</div>
+                <div class="grid-item" style="background-color: lightgrey">31-12-2018</div>
+                <div class="grid-item" style="background-color: lightgrey">México, Puerto Vallarta</div>
+                <div class="grid-item" style="background-color: lightgrey">Secrets Vallarta Bay</div>
+                <div class="grid-item">01-06-2019</div>
+                <div class="grid-item">Espanha, Barcelona</div>
+                <div class="grid-item">RCDE Stadium</div>
+            </div>
+        </div>
+    </div>
+
+    <input class="modal-state" id="modal-2" type="checkbox" />
+    <div class="modal">
+        <label class="modal__bg" for="modal-2"></label>
+        <div class="modal__inner">
+            <label class="modal__close" for="modal-2"></label>
+            <div style="font-size: 3em;text-align: center;color: #BA0725;font-weight: bold;">MÚSICA</div>
+            <div class="row">
+                <div class="coluna esq">
+                    <img src="album1.jpg" alt="Smiley face" width="100%">
+                </div>
+                <div class="coluna dir">
+                    <div style="font-size: 1.5em;font-weight: bold;">Amália Rodrigues "50 Greatest Hits"</div>
+                    <div style="font-size: 1.1em;">
+                        <ul>
+                            <li style="text-align: left;padding: 1em 0.5em 0.5em 0;"><span style="color: rgb(153, 152, 152);">01</span>&nbsp&nbsp&nbsp&nbspUma
+                                Casa Portuguesa</li>
+                            <li style="text-align: left;padding: 0 0.5em 0.5em 0;"><span style="color: rgb(153, 152, 152);">02</span>&nbsp&nbsp&nbsp&nbsp
+                                Barco Negro</li>
+                            <li style="text-align: left;padding: 0 0.5em 0.5em 0;"><span style="color: rgb(153, 152, 152);">03</span>&nbsp&nbsp&nbsp&nbsp
+                                Povo que lavas no Rio</li>
+                            <li style="text-align: left;padding: 0 0.5em 0.5em 0;"><span style="color: rgb(153, 152, 152);">04</span>&nbsp&nbsp&nbsp&nbsp
+                                Nem as paredes confesso</li>
+                            <li style="text-align: left;padding: 0 0.5em 0.5em 0;"><span style="color: rgb(153, 152, 152);">05</span>&nbsp&nbsp&nbsp&nbsp
+                                Ai mouraria</li>
+                            <li style="text-align: left;padding: 0 0.5em 0.5em 0;"><span style="color: rgb(153, 152, 152);">06</span>&nbsp&nbsp&nbsp&nbsp
+                                Fado Amália</li>
+                            <li style="text-align: left;padding: 0 0.5em 0.5em 0;"><span style="color: rgb(153, 152, 152);">07</span>&nbsp&nbsp&nbsp&nbsp
+                                Que Deus me perdoe</li>
+                            <li style="text-align: left;padding: 0 0.5em 0.5em 0;"><span style="color: rgb(153, 152, 152);">08</span>&nbsp&nbsp&nbsp&nbsp
+                                Coimbra</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="coluna esq">
+                    <img src="album2.jpg" alt="Smiley face" width="100%">
+                </div>
+                <div class="coluna dir">
+                    <div style="font-size: 1.5em;font-weight: bold;">Amália Rodrigues Uma Casa Portuguesa</div>
+                    <div style="font-size: 1.1em;">
+                        <ul>
+                            <li style="text-align: left;padding: 1em 0.5em 0.5em 0;"><span style="color: rgb(153, 152, 152);">01</span>&nbsp&nbsp&nbsp&nbspUma
+                                Casa Portuguesa</li>
+                            <li style="text-align: left;padding: 0 0.5em 0.5em 0;"><span style="color: rgb(153, 152, 152);">02</span>&nbsp&nbsp&nbsp&nbsp
+                                Estranha forma de vida</li>
+                            <li style="text-align: left;padding: 0 0.5em 0.5em 0;"><span style="color: rgb(153, 152, 152);">03</span>&nbsp&nbsp&nbsp&nbsp
+                                Gaivota</li>
+                            <li style="text-align: left;padding: 0 0.5em 0.5em 0;"><span style="color: rgb(153, 152, 152);">04</span>&nbsp&nbsp&nbsp&nbsp
+                                Foi Deus</li>
+                            <li style="text-align: left;padding: 0 0.5em 0.5em 0;"><span style="color: rgb(153, 152, 152);">05</span>&nbsp&nbsp&nbsp&nbsp
+                                Solidão</li>
+                            <li style="text-align: left;padding: 0 0.5em 0.5em 0;"><span style="color: rgb(153, 152, 152);">06</span>&nbsp&nbsp&nbsp&nbsp
+                                Tudo isto é fado</li>
+                            <li style="text-align: left;padding: 0 0.5em 0.5em 0;"><span style="color: rgb(153, 152, 152);">07</span>&nbsp&nbsp&nbsp&nbsp
+                                Canção do Mar</li>
+                            <li style="text-align: left;padding: 0 0.5em 0.5em 0;"><span style="color: rgb(153, 152, 152);">08</span>&nbsp&nbsp&nbsp&nbsp
+                                Confesso</li>
+                            <li style="text-align: left;padding: 0 0.5em 0.5em 0;"><span style="color: rgb(153, 152, 152);">09</span>&nbsp&nbsp&nbsp&nbsp
+                                Alfama</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <input class="modal-state" id="modal-3" type="checkbox" />
+    <div class="modal">
+        <label class="modal__bg" for="modal-3"></label>
+        <div class="modal__inner">
+            <label class="modal__close" for="modal-3"></label>
+            <div style="font-size: 3em;text-align: center;color: #BA0725;">CONTACTO</div>
+            <div style="text-align: center;">
+                <p>Email: exemplo@algo.pt | Amália Rodrigues</p>
+                <p>Telemóvel: 969596950 | Morada: Largo Costa Pinto Nº12 R/Esq</p>
+                <p>Copyright © 2018 | Miguel Rodrigues</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.height = "100%";
+            document.getElementById("mySidenav").style.top = "0";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.height = "0";
+            document.getElementById("mySidenav").style.top = "-10%";
+        }
+    </script>
+</body>
+
+</html>
