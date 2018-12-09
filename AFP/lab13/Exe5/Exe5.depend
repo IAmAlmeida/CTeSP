@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1544366755 source:c:\users\joaop\desktop\ctesp\afp\lab13\exe5\main.c
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+

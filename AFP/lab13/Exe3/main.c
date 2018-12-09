@@ -10,7 +10,7 @@ int main()
     printf("Introduza três números inteiros:\n");
     scanf("%d",&a);scanf("%d",&b);scanf("%d",&c);
     ordenaTresInteiros(&a,&b,&c);
-    printf("\n\n%d>%d>%d\n\n",a,b,c);
+    printf("\n\n%d>%d>%d\n\n",c,b,a);
     return 0;
 }
 
