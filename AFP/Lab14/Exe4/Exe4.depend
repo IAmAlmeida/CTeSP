@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1544530467 source:c:\users\sala230_pc8_ips\desktop\ctesp\afp\lab14\exe4\main.c
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+

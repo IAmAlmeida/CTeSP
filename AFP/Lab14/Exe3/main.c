@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+
+typedef struct{
+           char  nome[50];
+           char  morada[50];
+           int  idade;
+        }tipoAluno;
+
+void lerAluno(tipoAluno *);
+void mostrarAluno(tipoAluno alunos);
+
+void lerAluno(tipoAluno *alunos){
+    printf("Introduza o nome e idade e morada, pela respetiva ordem\n");
+    gets(alunos->nome);
+    fflush(stdin);
+    scanf(" %d",&alunos->idade);
+    fflush(stdin);
+    gets(alunos->morada);
+}
+
+void mostrarAluno(tipoAluno alunos){
+    printf(" Nome:%s\n Idade:%d\n Morada:%s\n",alunos.nome,alunos.idade,alunos.morada);
+}
+int main()
+{
+	setlocale(LC_ALL, "Portuguese");
+
+    tipoAluno alunos;
+    lerAluno(&alunos);
+    mostrarAluno(alunos);
+
+    return 0;
+}

@@ -54,10 +54,32 @@ Exe 10
 	5-Spyware/adware
 	6-Upgrade
 
-Pag 51
+Pag 61
 
-Exe8
-	
+exe 11
 
 
-	
+1 LandPost.com
+2 social network for Dogs and their owners
+3 user register 1$ per year
+4 e-commer sec - collars, leeds, food
+5 banners
+6 vet serguries
+7 2mil
+8 15kk
+9 prototype, spoken to  3rd party comp, that takes care of the webserver.
+
+
+exe 12
+
+1 social
+2 prototype
+3 message board
+4 monotize
+5 account
+6 e-commercer
+7 banners
+8 mailng
+9 domain
+10 hosting
+
