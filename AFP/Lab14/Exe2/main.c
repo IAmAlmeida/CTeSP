@@ -27,19 +27,17 @@ int main()
     }
     system("cls");
     do{
-
-    printf("Que aluno pretende consultar? [1-%d]\n Pressione 0 para sair\n",max_alunos);
-    scanf("%d",&op);
-    op--;
-    if(op>=0 && op<=max_alunos-1){
+        printf("Que aluno pretende consultar? [1-%d]\n Pressione 0 para sair\n",max_alunos);
+        scanf("%d",&op);
+        op--;
+        if(op>=0 && op<=max_alunos-1){
+                system("cls");
+            printf("\n Nome:%s\n Idade:%d\n Morada:%s\n\n",alunos[op].nome,alunos[op].idade,alunos[op].morada);
+        }else{
             system("cls");
-        printf("\n Nome:%s\n Idade:%d\n Morada:%s\n\n",alunos[op].nome,alunos[op].idade,alunos[op].morada);
-    }else{
-        system("cls");
-        printf("\n O aluno pretendido não existe\n\n");
-    }
-    op++;
-
+            printf("\n O aluno pretendido não existe\n\n");
+        }
+        op++;
     }while(op!=0);
     return 0;
 }

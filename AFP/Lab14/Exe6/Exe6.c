@@ -82,13 +82,3 @@ void escreverData(tipoData *data){
     mesnumeroparaextenso(&data->mes);
     printf("%d/%s/%d\n\n",data->dia,data->mes,data->ano);
 }
-int main()
-{
-    setlocale(LC_ALL,"Portuguese");
-    tipoData data;
-    defaultdate(&data);
-    escreverData(&data);
-    lerData(&data);
-    escreverData(&data);
-    return 0;
-}

@@ -1,0 +1,25 @@
+# depslib dependency file v1.0
+1544914913 source:c:\users\joaop\desktop\ctesp\afp\lab14\exe8\exe6.c
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+	<time.h>
+	<string.h>
+
+1544915980 source:c:\users\joaop\desktop\ctesp\afp\lab14\exe8\main.c
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+	"Exe6.h"
+	"Exe7.h"
+
+1544914913 c:\users\joaop\desktop\ctesp\afp\lab14\exe8\exe6.h
+
+1544914913 c:\users\joaop\desktop\ctesp\afp\lab14\exe8\exe7.h
+
+1544916050 source:c:\users\joaop\desktop\ctesp\afp\lab14\exe8\exe7.c
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+	"Exe6.h"
+

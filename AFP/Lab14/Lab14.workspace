@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_workspace_file>
+	<Workspace title="Workspace">
+		<Project filename="Exe1/Exe1.cbp" />
+		<Project filename="Exe2/Exe2.cbp" />
+		<Project filename="Exe3/Exe3.cbp" />
+		<Project filename="Exe4/Exe4.cbp" />
+		<Project filename="Exe5/Exe5.cbp" />
+		<Project filename="Exe6/Exe6.cbp" />
+		<Project filename="Exe7/Exe7.cbp" />
+		<Project filename="Exe8/Exe8.cbp" />
+	</Workspace>
+</CodeBlocks_workspace_file>

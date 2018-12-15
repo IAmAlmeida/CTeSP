@@ -1,3 +1,5 @@
+
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
@@ -74,6 +76,7 @@ void lerData(tipoData *data){
     printf("Introduza o mes:\n");
     fflush(stdin);
     gets(data->mes);
+    mesnumeroparaextenso(&data->mes);
     printf("Introduza o ano:\n");
     scanf("%d",&data->ano);
 }
@@ -81,14 +84,4 @@ void lerData(tipoData *data){
 void escreverData(tipoData *data){
     mesnumeroparaextenso(&data->mes);
     printf("%d/%s/%d\n\n",data->dia,data->mes,data->ano);
-}
-int main()
-{
-    setlocale(LC_ALL,"Portuguese");
-    tipoData data;
-    defaultdate(&data);
-    escreverData(&data);
-    lerData(&data);
-    escreverData(&data);
-    return 0;
 }
