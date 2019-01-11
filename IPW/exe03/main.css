@@ -1,0 +1,22 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+div.header{
+    text-align: center;
+    min-height: 150px;
+}
+img.smallportrait{
+    width: 100%;
+    height: 400px;
+    align-self: flex-start;
+}
+span.gallery{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float:left;
+    width: 19.999999999999999999999999999999999999999999999999999999999999999999999999999999999999999%;
+
+}

@@ -1,0 +1,32 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+form.container{
+    padding: 1%;
+    border: 1px solid black;
+    align-self: flex-start;
+}
+div.input{
+    width: 100%;
+    margin-bottom:10px;
+}
+input{
+    width: 300px;
+}
+input[type='number'] {
+    -moz-appearance:textfield;
+}
+textarea{
+    overflow:auto;
+    width: 300px;
+    max-height: 200px;  
+    max-width: 300px;
+}
+.hidden{
+    display:none;
+}
+.error{
+    border: solid 2px darkred;
+    transition: border-width 0.2s linear;
+}

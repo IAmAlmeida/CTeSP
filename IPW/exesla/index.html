@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Formulário</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script src="main.js"></script>
+</head>
+<body>
+    <h1>Formulário</h1>
+    <form class="container" action="" onsubmit="validateall(this)">
+            <p>Nome</p>
+            <input name="pnome" onblur="namevalidation(this);" type="text" placeholder="Primeiro Nome:">
+            <input class="hidden" name="apld" onblur="namevalidation(this);" type="text"  placeholder="Apelido:">
+
+            <p>Email</p>
+            <input name="email" onblur="emailvalidation(this);" type="text" placeholder="email:">
+            
+            <p>Morada</p>
+            <textarea name="morada" type="textarea" placeholder="morada:"></textarea>
+
+            <p>Idade</p>
+            <input name="idade" onblur="agevalidation(this);" type="text" placeholder="Idade:">
+            <br><br>
+            <input type="submit" value="Submeter">
+    </form>
+</body>
+</html> 

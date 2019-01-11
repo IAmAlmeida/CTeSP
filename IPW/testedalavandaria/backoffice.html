@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Backoffice de construção da oferta</title>
+    <link rel="stylesheet" type="text/css" href="loja.css">
+    <script src="backoffice.js"></script>
+</head>
+<body>
+    <header><h1>Backoffice da Loja</h1></header>
+    <table>
+        <tr>
+            <td>Nome</td>
+            <td><input type="text" name="nome" id="fldNome"></td>
+        </tr>
+        <tr>
+            <td>Tipo</td>
+            <td>
+                <select size="1" name="tipo" id="fldTipo">
+                    <option value="1">Eletrodoméstico</option>
+                    <option value="2">Computadores</option>
+                    <option value="3">Impressoras</option>
+                    <option value="4">Consumíveis</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Custo</td>
+            <td><input type="text" name="custo" id="fldCusto"></td>
+        </tr>
+    </table>
+    <br/>
+    <button onclick="adicionar()">Adicionar Artigo</button>
+    <br/>
+    <br/>
+    <br/>
+    <table border="1" id="tblOferta">
+            <tr>
+                <th>Artigo</th>
+                <th>Imagem</th>
+                <th>Custo</th>
+                <th>Apagar</th>
+            </tr>
+            <!--tr>
+                <td>ASUS i7 32Gb</td>
+                <td><img src="2.jpg" width="50" height="50"></td>
+                <td>1200 &euro;</td>
+            </tr-->
+        </table>    
+</body>
+</html>
