@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=Clock
+comment0.text=\r\n\ Escreva\ a\ descri\u00E7\u00E3o\ da\ classe\ Clock\ aqui.\r\n\ \r\n\ @author\ (seu\ nome)\ \r\n\ @version\ (n\u00FAmero\ de\ vers\u00E3o\ ou\ data)\r\n
+comment1.params=limite
+comment1.target=Clock(int)
+comment2.params=valor
+comment2.target=void\ setValor(int)
+comment3.params=
+comment3.target=int\ getValor()
+comment4.params=
+comment4.target=void\ tick()
+comment5.params=
+comment5.target=java.lang.String\ valorString()
+numComments=6

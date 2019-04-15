@@ -1,0 +1,21 @@
+Student student1 = new Student("Vasco", "1");
+Student student2 = new Student("Jaime", "2");
+Student student1 = new Student("Tiburssio","1");
+Student student2 = new Student("Ttibdete","1");
+student1.addCredits(9);
+student2.addCredits(9);
+student1.print();
+Tiburssio, student ID: 1, credits: 9
+student2.print();
+Ttibdete, student ID: 1, credits: 9
+LabClass labClass1 = new LabClass(20);
+LabClass labClass1 = new LabClass(20);
+labClass1.enrollStudent(student1);
+labClass1.enrollStudent(student2);
+labClass1.printList();
+Lab class unknown
+Instructor: unknown   Room: unknown
+Class list:
+Tiburssio, student ID: 1, credits: 9
+Ttibdete, student ID: 1, credits: 9
+Number of students: 2

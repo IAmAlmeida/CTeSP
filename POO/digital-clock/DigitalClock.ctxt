@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.params=
+comment0.target=DigitalClock()
+comment0.text=\r\n\ Construtor\ para\ objetos\ da\ classe\ DigitalClock\r\n
+comment1.params=
+comment1.target=int\ getMinutes()
+comment2.params=newMinutes
+comment2.target=void\ setMinutes(int)
+comment3.params=
+comment3.target=int\ getHours()
+comment4.params=newHours
+comment4.target=void\ setHours(int)
+comment5.params=
+comment5.target=boolean\ isMode12Hours()
+comment6.params=newMode12Hours
+comment6.target=void\ setMode12hours(boolean)
+comment7.params=
+comment7.target=void\ showTime()
+comment8.params=
+comment8.target=void\ forwardOneMinute()
+numComments=9

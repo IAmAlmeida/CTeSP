@@ -1,0 +1,1 @@
+SELECT dayname(sysdate() + interval 10 day)

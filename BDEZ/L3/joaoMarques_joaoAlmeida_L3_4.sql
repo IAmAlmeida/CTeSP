@@ -1,0 +1,2 @@
+use exemplo;
+select dis_nome,pla_semestre from cursos c inner join planoestudos pe on pe.pla_cur_id=c.cur_id left join disciplinas d on pe.pla_dis_id = d.dis_id where c.cur_id = 1 order by pla_semestre

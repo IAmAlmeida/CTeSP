@@ -1,0 +1,12 @@
+Square square1 = new Square();
+Square square2 = new Square();
+square1.changeSize(60*3);
+square2.changeSize(60*2);
+square1.changeColor("green");
+square2.changeColor("blue");
+square1.moveHorizontal(-310);
+square1.moveVertical(-120);
+square2.moveHorizontal(70);
+square2.moveVertical(60);
+square1.makeVisible();
+square2.makeVisible();

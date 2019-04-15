@@ -1,0 +1,1 @@
+select alu_nome as nome, timestampdiff(YEAR,alu_dnsc,sysdate()) as Ano, timestampdiff(MONTH,alu_dnsc,sysdate()) as mes, timestampdiff(DAY,alu_dnsc,sysdate()) as dia from alunos;

@@ -1,0 +1,36 @@
+Student student1 = new Student("Humberto Leal", "1");
+student1.print();
+Humberto Leal, student ID: 1, credits: 0
+student1.addCredits(6);
+student1.print();
+Humberto Leal, student ID: 1, credits: 6
+student1.getName()
+    returned String "Humberto Leal"
+student1.getStudentID()
+    returned String "1"
+LabClass labClass1 = new LabClass(18);
+labClass1.enrollStudent(student1);
+labClass1.printList();
+Lab class unknown
+Instructor: unknown   Room: unknown
+Class list:
+Humberto Leal, student ID: 1, credits: 6
+Number of students: 1
+labClass1.numberOfStudents()
+    returned int 1
+student1.getName()
+    returned String "Humberto Leal"
+student1.changeName("Humberto Infiel");
+labClass1.printList();
+Lab class unknown
+Instructor: unknown   Room: unknown
+Class list:
+Humberto Infiel, student ID: 1, credits: 6
+Number of students: 1
+labClass1.setRoom("30");
+labClass1.printList();
+Lab class unknown
+Instructor: unknown   Room: 30
+Class list:
+Humberto Infiel, student ID: 1, credits: 6
+Number of students: 1

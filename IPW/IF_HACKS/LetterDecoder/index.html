@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body style="margin-left:40px;margin-right:40px;">
+    <ul><h1>LetterCrypt</h1></ul>
+    <hr>
+    <div class="row">
+        <label class="col-2" for="text">Texto</label>
+        <textarea style="max-width: 700px;" class="col-10"id = "text" type=text></textarea>
+        <label min="1"class="col-2" for="placement">Posição da Letra</label>
+        <input style="max-width: 200px;" class="col-10" type="number" id = "placement" value=1>
+        <button class="col-12 btn btn-dark" style="margin-top:20px" onclick="decode()" id = "decodebutton">Hacker man</button>
+    </div>
+    <hr>
+    <ul><h3>Phrase</h3></ul>
+<p id="display"></p>
+</body>
+</html>

@@ -1,0 +1,19 @@
+a:visited, a:hover, a:link {
+color: navy;
+    }
+table {
+    border: 1px solid #000;
+border-collapse: collapse;
+    } td, th {
+padding: 5px; border:
+1px solid #000;
+    }
+.nome {
+    font-weight: bold;
+    }
+.tipo {
+    text-align: center;
+    }
+    .preco::after {
+content: " €";
+    } 

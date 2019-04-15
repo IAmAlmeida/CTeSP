@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=
+comment0.target=VendingMachine()
+comment1.params=n
+comment1.target=VendingMachine(int)
+comment2.params=
+comment2.target=void\ depositQuarter()
+comment3.params=
+comment3.target=void\ selectCandy()
+comment4.params=
+comment4.target=void\ printStatus()
+numComments=5

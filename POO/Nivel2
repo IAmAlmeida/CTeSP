@@ -1,0 +1,13 @@
+Circle circle1 = new Circle();
+circle1.moveHorizontal(40-230);
+circle1.moveVertical(-90);
+circle1.moveRight();
+circle1.moveRight();
+circle1.makeVisible();
+circle1.slowMoveHorizontal(110-80);
+circle1.slowMoveVertical(110);
+circle1.changeSize(68*2);
+circle1.moveHorizontal(70-110);
+circle1.moveVertical(-110);
+circle1.changeColor("yellow");
+circle1.changeSize(90);
